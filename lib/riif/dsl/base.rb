@@ -31,7 +31,7 @@ module Riif::DSL
     def headers
       [
         ["!#{self.class::START_COLUMN}"].concat(
-          self.class::HEADER_COLUMNS.map(&:upcase)
+          self.class::HEADER_COLUMNS.map(&:to_s).map(&:humanize).map(&:upcase)
         )
       ]
     end
