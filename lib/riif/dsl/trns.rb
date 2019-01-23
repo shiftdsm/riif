@@ -18,7 +18,7 @@ module Riif::DSL
 
     def headers
       [
-        ["!#{START_COLUMN}"].concat(HEADER_COLUMNS.map(&:upcase)),
+        ["!#{START_COLUMN}"].concat(HEADER_COLUMNS.map(&:to_s).map(&:humanize).map(&:upcase)),
         ["!SPL"].concat(Spl::HEADER_COLUMNS.map(&:to_s).map(&:humanize).map(&:upcase)),
         ["!#{END_COLUMN}"]
       ]
