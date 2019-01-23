@@ -1,36 +1,17 @@
 module Riif::DSL
   class Trns < Base
     HEADER_COLUMNS = [
-      :trnsid,
       :trnstype,
       :date,
-      :accnt,
+      :item,
       :name,
-      :class,
+      :accnt,
       :amount,
       :docnum,
+      :participant,
+      :description,
       :memo,
-      :clear,
-      :toprint,
-      :addr1,
-      :addr2,
-      :addr3,
-      :addr4,
-      :addr5,
-      :saddr1,
-      :saddr2,
-      :saddr3,
-      :saddr4,
-      :saddr5,
-      :duedate,
-      :terms,
-      :paid,
-      :paymeth,
-      :shipdate,
-      :rep,
-      :ponum,
-      :invtitle,
-      :invmemo
+      :credit_card_acct
     ]
     START_COLUMN = 'TRNS'
     END_COLUMN = 'ENDTRNS'
@@ -38,7 +19,7 @@ module Riif::DSL
     def headers
       [
         ["!#{START_COLUMN}"].concat(HEADER_COLUMNS.map(&:upcase)),
-        ["!SPL"].concat(Spl::HEADER_COLUMNS.map(&:upcase)),
+        ["!SPL"].concat(Spl::HEADER_COLUMNS.map(&:to_s).map(&:humanize).map(&:upcase)),
         ["!#{END_COLUMN}"]
       ]
     end

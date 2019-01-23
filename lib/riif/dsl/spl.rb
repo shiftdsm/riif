@@ -1,23 +1,15 @@
 module Riif::DSL
   class Spl < Base
     HEADER_COLUMNS = [
-      :splid,
       :trnstype,
       :date,
-      :accnt,
+      :item,
       :name,
-      :class,
+      :accnt,
       :amount,
       :docnum,
-      :memo,
-      :clear,
-      :qnty,
-      :price,
-      :invitem,
-      :paymeth,
-      :taxable,
-      :reimbexp,
-      :extra
+      :participant,
+      :description
     ]
     START_COLUMN = 'SPL'
     END_COLUMN = ''
