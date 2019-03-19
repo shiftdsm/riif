@@ -4,12 +4,18 @@ module Riif::DSL
       :trnstype,
       :date,
       :item,
-      :name,
       :accnt,
+      :name,
+      :class,
       :amount,
       :docnum,
       :participant,
-      :description
+      :description,
+      :clear,
+      :qnty,
+      :reimbexp,
+      :servicedate,
+      :other2
     ]
     START_COLUMN = 'SPL'
     END_COLUMN = ''

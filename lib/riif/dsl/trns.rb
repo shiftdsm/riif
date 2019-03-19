@@ -4,13 +4,19 @@ module Riif::DSL
       :trnstype,
       :date,
       :item,
-      :name,
       :accnt,
+      :name,
+      :class,
       :amount,
       :docnum,
       :participant,
       :description,
       :memo,
+      :clear,
+      :toprint,
+      :addr5,
+      :duedate,
+      :terms,
       :credit_card_acct
     ]
     START_COLUMN = 'TRNS'
