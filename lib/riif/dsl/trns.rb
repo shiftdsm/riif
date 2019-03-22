@@ -4,6 +4,7 @@ module Riif::DSL
       :trnstype,
       :date,
       :item,
+      :invitem,
       :accnt,
       :name,
       :class,
