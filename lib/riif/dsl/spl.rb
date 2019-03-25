@@ -3,6 +3,7 @@ module Riif::DSL
     HEADER_COLUMNS = [
       :trnstype,
       :date,
+      :class,
       :item,
       :invitem,
       :accnt,
