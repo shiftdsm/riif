@@ -7,7 +7,6 @@ module Riif::DSL
       :invitem,
       :accnt,
       :name,
-      :class,
       :amount,
       :docnum,
       :participant,
