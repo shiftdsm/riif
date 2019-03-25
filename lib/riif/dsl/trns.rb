@@ -13,6 +13,7 @@ module Riif::DSL
       :participant,
       :description,
       :memo,
+      :qnty,
       :clear,
       :toprint,
       :addr5,
