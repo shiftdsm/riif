@@ -14,7 +14,7 @@ module Riif::DSL
       :qnty,
       :clear,
       :toprint,
-      :addr5,
+      :addrs,
       :duedate,
       :terms,
       :credit_card_acct

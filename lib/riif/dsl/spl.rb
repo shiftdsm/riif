@@ -10,8 +10,6 @@ module Riif::DSL
       :name,
       :amount,
       :docnum,
-      :participant,
-      :description,
       :memo,
       :clear,
       :qnty,
